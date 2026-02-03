@@ -11,15 +11,13 @@
 所有核心算法和数据处理逻辑均封装在 `pipeline_lib.py` 中。  
 
 ---
-
+```plain text
 ## 目录结构
-
-# traj_deal
-
 project/
 ├── run_pipeline.py  # 主脚本，用于调度完整处理流程
 ├── pipeline_lib.py  # 函数库，包含全部核心处理逻辑
 ├── data/            # 原始轨迹 JSON 文件目录
 │   └── outputs/     # 第一阶段输出目录
-├── data_deal_1/     # 第二阶段输出目录
+├── data_deal/     # 第二阶段输出目录
 └── num/             # 最终筛选结果目录
+```
