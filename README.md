@@ -86,7 +86,7 @@ timestamp // 时间戳
 **对应函数：** `stage2_subject_filter`  
 
 **输入目录：** `./data/outputs`  
-**输出目录：** `./data_deal_1`  
+**输出目录：** `./data_deal`  
 
 #### 处理目标
 
@@ -117,7 +117,7 @@ timestamp // 时间戳
 
 **对应函数：** `stage3_collect`  
 
-**输入目录：** `./data_deal_1`  
+**输入目录：** `./data_deal`  
 **输出目录：** `./num`  
 
 #### 处理目标
