@@ -11,8 +11,9 @@
 所有核心算法和数据处理逻辑均封装在 `pipeline_lib.py` 中。  
 
 ---
-```plain text
 ## 目录结构
+
+```plain text
 project/
 ├── run_pipeline.py  # 主脚本，用于调度完整处理流程
 ├── pipeline_lib.py  # 函数库，包含全部核心处理逻辑
@@ -20,4 +21,22 @@ project/
 │   └── outputs/     # 第一阶段输出目录
 ├── data_deal/     # 第二阶段输出目录
 └── num/             # 最终筛选结果目录
+```
+
+---
+
+## 输入数据格式
+
+每个输入文件为一个 JSON 对象。  
+JSON 的键表示车辆编号。  
+JSON 的值表示该车辆的轨迹帧序列。  
+
+单个轨迹帧的结构如下：
+
+```
+[
+position, // [x, y]，车辆在平面坐标系中的位置
+direction, // [dx, dy]，车辆行驶方向向量
+timestamp // 时间戳
+]
 ```
