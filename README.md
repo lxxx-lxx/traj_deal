@@ -19,7 +19,7 @@ project/
 ├── pipeline_lib.py  # 函数库，包含全部核心处理逻辑
 ├── data/            # 原始轨迹 JSON 文件目录
 │   └── outputs/     # 第一阶段输出目录
-├── data_deal/     # 第二阶段输出目录
+├── data_deal/       # 第二阶段输出目录
 └── num/             # 最终筛选结果目录
 ```
 
